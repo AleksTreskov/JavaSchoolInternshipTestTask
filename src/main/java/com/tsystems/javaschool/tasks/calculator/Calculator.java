@@ -46,7 +46,7 @@ public class Calculator {
         while (matcher.find()) {
             String subQuery = matcher.group(1);
 
-            statement = statement.replace("(" + subQuery + ")", evaluate(subQuery));
+            statement = statement.replace(subQuery, evaluate(subQuery));
 
         }
 
